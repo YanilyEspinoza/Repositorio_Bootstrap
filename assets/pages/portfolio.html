@@ -1,101 +1,124 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Yanily Espinoza | Web Developer</title>
-    <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Portfolio | Yanily Espinoza | Web Developer</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <!--favicon-->
+        <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+        <!--CSS-->
+        <link rel="stylesheet" href="../css/style.css">
+        <!--WOW-->
+        <link rel="stylesheet" href="../css/animate.css">
+    </head>
+    <body class="body">
 
-    <!--CSS-->
-    <link rel="stylesheet" href="../css/style.css">   
-</head>
-<body class="portfolio__body">
+        <!--START NAVBAR-->
+        <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="#">YAEV</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item navDecoration">
+                <a class="nav-link active text-white" href="../../index.html">Home</a>
+                </li>
+                <li class="nav-item navDecoration">
+                <a class="nav-link text-white" aria-current="page" href="#">Portfolio</a>
+                </li>
+                <li class="nav-item navDecoration">
+                <a class="nav-link text-white" href="./skillsset.html">Skill-Set</a>
+                </li>
+                <li class="nav-item navDecoration">
+                <a class="nav-link text-white" href="./services.html">Service</a>
+                </li>
+                <li class="nav-item navDecoration">
+                <a class="nav-link text-white" href="./contact.html">Contact</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+        </nav>
+        <!--END NAVBAR-->
 
-    <!--NAVBAR-->
-    <nav class="zoneA2">
-        <ul>
-            <li>
-                <a href="../../index.html">Home</a>
-            </li>
-            <li>
-                <a href="">Portfolio</a> 
-            </li>
-            <li>
-                <a href="skillsset.html">Skills</a>
-            </li>
-            <li>
-                <a href="services.html">Services</a>
-            </li>
-            <li>
-                <a href="contact.html">Contact</a>
-            </li>
-        </ul>
-    </nav>
+        <!--START MAIN-->
+        <main class="py-5 my-5 container-fluid">
 
-<!--PORTFOLIO-->
-<h1 class="zoneB2 minMargin">Portfolio</h1>
-<main class="zoneC2 portfolio__main">
-    <section class="portfolio__main--section" >
-        <figure class="portfolio__main--figure">
-            <img src="../images/portfolio1.jfif" width="180" alt="CSS Challengue" class="minMargin">
-            <div class="main__portfolio--div"> 
-                <figcaption class="minMargin"><b>Mayorca Studio</b></figcaption>
-                <p class="minMargin">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit, in.</p>
-            </div>   
-        </figure>
-        <figure class="portfolio__main--figure">
-            <img src="../images/portfolio2.jfif" width="180" alt="Menu Icon Challengue" class="minMargin">
-            <div class="main__portfolio--div">
-                <figcaption class="minMargin"><b>Grupo 3</b></figcaption>
-                <p class="minMargin">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit, in.</p>
-            </div>
-        </figure>
-    </section>
-    <section class="portfolio__main--section">
-        <figure class="portfolio__main--figure">
-            <img src="../images/portfolio3.jfif" width="180" alt="Statistic Challengue" class="minMargin">
-            <div class="main__portfolio--div">
-                <figcaption class="minMargin"><b>Mayorca Mega Plaza</b></figcaption>
-                <p class="minMargin">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit, in.</p>
-            </div>
-        </figure>
-        <figure class="portfolio__main--figure">
-            <img src="../images/portfolio4.png" width="180" alt="Profile Challengue" class="minMargin">
-            <div class="main__portfolio--div">
-                <figcaption class="minMargin"><b>Alcazar Bulevar</b></figcaption>
-                <p class="minMargin">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit, in.</p>
-            </div>
-        </figure>
-    </section>
-    
-</main>
+            <!--PORTFOLIO-->
+            <section class="my-4">
+            <h2 class="my-3">Portfolio & Challengues</h2>  
+                <article class="row" >
+                    <figure class="col-sm-12 col-md-6 col-lg-3 text-center">
+                        <img src="../images/portfolio1.jfif" width="180" alt="Mayorca Studio" class="">
+                        <div class=""> 
+                            <figcaption class=" wow pulse" data-wow-offset="10" data-wow-iteration="2" data-wow-delay="0.1s"><b>Mayorca Studio</b></figcaption>
+                            <p class="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit, in.</p>
+                        </div>   
+                    </figure>
+                    <figure class="col-sm-12 col-md-6 col-lg-3 text-center">
+                        <img src="../images/portfolio2.jfif" width="180" alt="Grupo 3" class="">
+                        <div class="">
+                            <figcaption class=" wow pulse" data-wow-offset="10" data-wow-iteration="2" data-wow-delay="2s"><b>Grupo 3</b></figcaption>
+                            <p class="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit, in.</p>
+                        </div>
+                    </figure>
+                    <figure class="col-sm-12 col-md-6 col-lg-3 text-center">
+                        <img src="../images/portfolio3.jfif" width="180" alt="Mayorca Mega Plaza" class="">
+                        <div class="">
+                            <figcaption class="wow pulse" data-wow-offset="10" data-wow-iteration="2" data-wow-delay="4s"><b>Mayorca Mega Plaza</b></figcaption>
+                            <p class="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit, in.</p>
+                        </div>
+                    </figure>
+                    <figure class="col-sm-12 col-md-6 col-lg-3 text-center">
+                        <img src="../images/portfolio4.png" width="180" alt="Alcazar Bulevar" class="">
+                        <div class="">
+                            <figcaption class="wow pulse" data-wow-offset="10" data-wow-iteration="2" data-wow-delay="6s"><b>Alcazar Bulevar</b></figcaption>
+                            <p class="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit, in.</p>
+                        </div>
+                    </figure>
+                </article>
+            </section>
+        </main>
+        <!--END MAIN-->   
 
-    <!--FOOTER-->
-    <footer class="zoneD2">
+        <!--START FOOTER-->
+        <footer class="mt-5 container-fluid">
+            <h2 class="">Socials</h2>
+            <!--SOCIALS-->
+            <section class="d-flex justify-content-evenly">
+                <div class="mb-5 mt-2">
+                    <a href="https://www.twitter.com" target="_blank">
+                        <img src="../images/Twitter.png" width="55vp" alt="Twitter" class="bgColor">
+                    </a>
+                </div>
+                <div class="mb-5 mt-2">
+                    <a href="https://www.linkedin.com" target="_blank">
+                        <img src="../images/Linkedin.png" width="55vp" alt="Linkedin" class="bgColor">
+                    </a>
+                </div>
+                <div class="mb-5 mt-2">
+                    <a href="https://github.com" target="_blank">
+                        <img src="../images/Gitbut.png" width="55vp" alt="Github" class="bgColor">
+                    </a>
+                </div>
+            </section>
 
-        <!--SOCIALS-->
-        <h3 class="textCenter">Socials</h3>
-        <section class="footerSection">
-            <div class="socialMargin">
-                <a href="https://twitter.com" target="_blank">
-                    <img src="../images/Twitter.png" width="60" alt="Twitter" class="backgroundImg"></a>
-            </div>
-            <div class="socialMargin">
-                <a href="https://linkedin.com" target="_blank">
-                    <img src="../images/Linkedin.png" width="60" alt="Linkedin" class="backgroundImg"></a>
-            </div>
-            <div class="socialMargin">
-                <a href="https://gitbut.com" target="_blank">
-                    <img src="../images/Gitbut.png" width="60" alt="Gitbut" class="backgroundImg"></a>
-            </div>
-        </section>
-
-        <!--PUBLIC DOMAIN-->
-        <section class="footerSection">
-            <img src="../images/Dominio publico.jpeg" width="100" height="40" alt="Public Domain" class="domainMargin">
-            <h4 class="domainMargin">2022 Yanily Espinoza. Web Developer</h4>
-        </section>
-    </footer>
-</body>
+            <!--PUBLIC DOMAIN-->
+            <section class="d-flex justify-content-center align-items-center my-3">
+                <img src="../images/Dominio publico.jpeg" width="100" height="40" alt="public domain">
+                <p class="footerP">2022 Yanily Espinoza. Web Developer</p>
+            </section>
+        </footer>
+        <!--END FOOTER-->
+        
+        <!--SCRIPT-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+        <script src="../js/wow.min.js"></script>
+        <script>
+        new WOW().init();
+        </script>
+    </body>
 </html>

@@ -1,37 +1,48 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Services | Yanily Espinoza | Web Developer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!--favicon-->
     <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
-    
     <!--CSS-->
-    <link rel="stylesheet" href="../css/style.css">   
-</head>
-<body class="service__body">
-  
-    <!--NAVBAR-->
-    <nav class="zone4A">
-        <ul>
-            <li>
-                <a href="../../index.html">Home</a>
+    <link rel="stylesheet" href="../css/style.css">
+    <!--WOW-->
+    <link rel="stylesheet" href="../css/animate.css">
+  </head>
+  <body class="body">
+
+    <!--START NAVBAR-->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white" href="#">YAEV</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item navDecoration">
+              <a class="nav-link active text-white" href="../../index.html">Home</a>
             </li>
-            <li>
-                <a href="portfolio.html">Portfolio</a>
+            <li class="nav-item navDecoration">
+              <a class="nav-link text-white" href="./portfolio.html">Portfolio</a>
             </li>
-            <li>
-                <a href="skillsset.html">Skills</a>
+            <li class="nav-item navDecoration">
+               <a class="nav-link text-white" href="./skillsset.html">Skill-Set</a>
             </li>
-            <li>
-                <a href="">Services</a> 
+            <li class="nav-item navDecoration">
+              <a class="nav-link text-white" aria-current="page" href="#">Service</a>
             </li>
-            <li>
-                <a href="contact.html">Contact</a>
+            <li class="nav-item navDecoration">
+              <a class="nav-link text-white" href="./contact.html">Contact</a>
             </li>
-        </ul>
+          </ul>
+        </div>
+      </div>
     </nav>
+    <!--END NAVBAR-->
     
     <!--SERVICES-->
     
@@ -51,31 +62,41 @@
         </section>
     </main>
 
-    <!--FOOTER-->
-    <footer class="zone4C">
+        <!--START FOOTER-->
+        <footer class="mt-5 container-fluid">
+            <h2 class="">Socials</h2>
+            <!--SOCIALS-->
+            <section class="d-flex justify-content-evenly">
+                <div class="mb-5 mt-2">
+                    <a href="https://www.twitter.com" target="_blank">
+                        <img src="../images/Twitter.png" width="55vp" alt="Twitter" class="bgColor">
+                    </a>
+                </div>
+                <div class="mb-5 mt-2">
+                    <a href="https://www.linkedin.com" target="_blank">
+                        <img src="../images/Linkedin.png" width="55vp" alt="Linkedin" class="bgColor">
+                    </a>
+                </div>
+                <div class="mb-5 mt-2">
+                    <a href="https://github.com" target="_blank">
+                        <img src="../images/Gitbut.png" width="55vp" alt="Github" class="bgColor">
+                    </a>
+                </div>
+            </section>
 
-        <!--SOCIALS-->
-        <h3 class="textCenter">Socials</h3>
-        <section class="footerSection">
-            <div class="socialMargin">
-                <a href="https://twitter.com" target="_blank">
-                    <img src="../images/Twitter.png" width="60" alt="Twitter" class="backgroundImg"></a>
-            </div>
-            <div class="socialMargin">
-                <a href="https://linkedin.com" target="_blank">
-                    <img src="../images/Linkedin.png" width="60" alt="Linkedin" class="backgroundImg"></a>
-            </div>
-            <div class="socialMargin">
-                <a href="https://gitbut.com" target="_blank">
-                    <img src="../images/Gitbut.png" width="60" alt="Gitbut" class="backgroundImg"></a>
-            </div>
-        </section>
-
-        <!--PUBLIC DOMAIN-->
-        <section class="footerSection">
-            <img src="../images/Dominio publico.jpeg" width="100" height="40" alt="Public Domain" class="domainMargin">
-            <h4 class="domainMargin">2022 Yanily Espinoza. Web Developer</h4>
-        </section>
-    </footer>
+            <!--PUBLIC DOMAIN-->
+            <section class="d-flex justify-content-center align-items-center my-3">
+                <img src="../images/Dominio publico.jpeg" width="100" height="40" alt="public domain">
+                <p class="footerP">2022 Yanily Espinoza. Web Developer</p>
+            </section>
+        </footer>
+        <!--END FOOTER-->
+        
+        <!--SCRIPT-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+        <script src="../js/wow.min.js"></script>
+        <script>
+        new WOW().init();
+        </script>
 </body>
 </html>
