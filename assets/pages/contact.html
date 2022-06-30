@@ -12,10 +12,10 @@
     <!--WOW-->
     <link rel="stylesheet" href="../css/animate.css">
   </head>
-  <body class="body">
+  <body class="body w-100">
 
     <!--START NAVBAR-->
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg bg-dark">
       <div class="container-fluid">
         <a class="navbar-brand text-white" href="#">YAEV</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,75 +44,80 @@
     </nav>
     <!--END NAVBAR-->
        
-<!--CONTACT FORM-->
-    <header class="zone5B headerMargin">
+    <!--START CONTACT FORM-->
+    <header class="my-5 container-fluid">
         <h2>Contact</h2>
-    </header>  
-    <form action="envio.php" class="zone5C contact__form">
-        <fieldset class="contact__form--fieldset minMargin">
-            <legend>Contact Information</legend>
-            <div>
-                <label for="fname" class="minMargin">Name:</label>
-                <input type="text" id:="fname" placeholder="Yanily Alejandra" name="Fname">
+    </header>
+    <div class="my-5 container-fluid"> 
+        <form action="envio.php" class="">
+            <fieldset class="row my-2">
+                <legend class="col-sm-12">Contact Information</legend>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <label for="fname" class="my-2">Name:</label> 
+                    <input type="text" class="form-control" placeholder="Yanily Alejandra" aria-label="First name" id="fname" name="Fname">
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <label for="lname" class="my-2">Last Name:</label>
+                    <input type="text" class="form-control" placeholder="Espinoza" aria-label="Last name" id:="lname"name="Lname" >
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <label for="age" class="my-2">Age:</label>
+                    <input type="number" class="form-control" id="age" placeholder="35" max="90" min="18" name="Age">
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <p class="my-2">Sex</p>
+                    <label for="sexWoman" class="ms-3 form-check-label">Woman:</label>
+                    <input type="radio"  id="sexWoman" name="Sex" value="Woman" class="form-check-input">
+                    <label for="sexMan" class="ms-3 form-check-label">Man:</label>
+                    <input type="radio" id="sexMan" name="Sex" value="Man" class="form-check-input">
+                    <label for="sexOthers" class="ms-3 form-check-label">Others:</label>
+                    <input type="radio" id="sexOthers" name="Sex" value="Others" class="form-check-input">
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <label for="email" class="my-2">E-mail:</label>
+                    <input type="email" id="email" placeholder="pedro27@gmail.com" name="Email" class="form-control">
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <label for="tel" class="my-2">Phone:</label>
+                    <input type="tel" id="tel" placeholder="+0900-17288-88" name="Phone" class="form-control">
+                </div>
+            </fieldset>
+            <fieldset class="row my-2">
+                <legend class="col-sm-12">Application Form</legend>
+                
+                
+                <div class="col-sm-6 col-lg-4">
+                    <label for="service" class="form-label">Service Required?</label>
+                    <select id="service" class="form-select" name="Service">
+                      <option value="--" selected>--</option>  
+                      <option value="Website Design">Website Design</option>
+                      <option value="Collaborative Work">Collaborative Work</option>
+                      <option value="Tutoring">Tutoring</option>
+                    </select>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <label for="comment">Leave your comment:</label>
+                    <textarea class="form-control my-2" placeholder="Leave a comment here" id="comment"></textarea>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="information" name="Information" value="Yes">
+                      <label class="form-check-label" for="information">Do you want to receive information about us?</label>
+                </div>
+            </fieldset>        
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="reset" class="btn btn-primary">Reset</button>
             </div>
-            <div>
-                <label for="lname" class="minMargin">Last Name:</label>
-                <input type="text" id:="lname" placeholder="Espinoza" name="Lname">
-            </div>
-            <div>
-                <label for="age" class="minMargin">Age:</label>
-                <input type="number" id="age" placeholder="35" max="90" min="18" name="Age">
-            </div>
-            <div class="minMargin">
-                <p>Sex</p>
-                <label for="sex" class="minMargin">Woman:</label>
-                <input type="radio" id="sex" name="Sex" value="Woman" class="button">
-                <label for="sex" class="minMargin">Man:</label>
-                <input type="radio" id="sex" name="Sex" value="Man" class="button">
-                <label for="sex" class="minMargin">Others:</label>
-                <input type="radio" id="sex" name="Sex" value="Others" class="button">
-            </div>
-            <div>
-                <label for="email" class="minMargin">E-mail:</label>
-                <input type="email" id="email" placeholder="pedro27@gmail.com" name="Email">
-            </div>
-            <div>
-                <label for="tel" class="minMargin">Phone:</label>
-                <input type="tel" id="tel" placeholder="+0900-17288-88" name="Phone">
-            </div>
-        </fieldset>
-        <fieldset class="contact__form--fieldset minMargin">
-            <legend>Application Form</legend>
-            <div>
-                <label for="service" class="minMargin">Service Required?</label>
-                <select name="Service" id="service" class="button">
-                    <option value="--">--</option>
-                    <option value="Website Design">Website Design</option>
-                    <option value="Collaborative Work">Collaborative Work</option>
-                    <option value="Tutoring">Tutoring</option>
-                </select>
-            </div>
-            <div>
-                <label for="comment" class="minMargin">Leave your comment:</label>
-                <textarea placeholder="  Hi! I want..." id="coment" cols="30" rows="10"></textarea>
-            </div>
-            <div>
-                <label for="information" class="minMargin">Do you want to receive information about us?</label>
-                <input type="checkbox" id="information" name="Information" value="Yes" class="button">
-            </div>
-        </fieldset>        
-        <div class="contact__form--div">
-            <input type="reset" value="Reset" class="minMargin w20 button">
-            <input type="submit" value="Confirm" class="minMargin w20 button">
-        </div>
-    </form>
- 
-    <!--LOCATION-->
-    <aside class="zone5D textCenter">
-        <h3 class="minMargin">Location</h3>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d786859.1145806211!2d2.3511633468803295!3d39.61215136824025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1297b8766606c129%3A0xb7eb9bff02d2ecc0!2sMallorca!5e0!3m2!1ses!2sar!4v1653873368647!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </aside>
+        </form>
+        <!--END CONTACT FORM-->
 
+        <!--LOCATION-->
+        <aside class="my-5 ">
+            <h3 class="my-3">Location</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d786859.1145806211!2d2.3511633468803295!3d39.61215136824025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1297b8766606c129%3A0xb7eb9bff02d2ecc0!2sMallorca!5e0!3m2!1ses!2sar!4v1653873368647!5m2!1ses!2sar" width="220vp" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </aside>
+    </div> 
         <!--START FOOTER-->
         <footer class="mt-5 container-fluid">
             <h2 class="">Socials</h2>
